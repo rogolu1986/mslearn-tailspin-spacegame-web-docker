@@ -13,7 +13,7 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
-      vmImage: 'vs2017-win2016'
+      vmImage: 'ubuntu-16.04'
     steps:
     - task: Docker@2
       displayName: 'Build and push the image to container registry'
